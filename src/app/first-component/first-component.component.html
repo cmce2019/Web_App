@@ -1,0 +1,12 @@
+<form>
+    <input type="text" name="he" [(ngModel)]="he">
+    <input type="text" name="bo" [(ngModel)]="bo">
+</form>
+
+<agm-map [latitude]="lat" [longitude]="lng">
+</agm-map>
+
+ he: {{he}} bo: {{bo}} 
+ <div *ngFor="let post of posts">
+     <p> {{post.title}}</p>
+ </div>
