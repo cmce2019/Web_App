@@ -1,26 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ViewChildren, AfterViewInit, QueryList, ElementRef } from '@angular/core';
 import { DataService } from '../data.service';
+import { ContentComponent } from '../content/content.component';
+
 
 @Component({
   selector: 'app-first-component',
   templateUrl: './first-component.component.html',
   styleUrls: ['./first-component.component.css']
 })
-export class FirstComponentComponent implements OnInit {
-  lat: number = 51.678418;
-  lng: number = 7.809007;
-  he;
-  bo;
-  posts=[];
-  constructor(private dataService: DataService) { 
-    this.dataService.getData().subscribe(data => {
-      this.posts=data;
-    });
-  }
+export class FirstComponentComponent implements AfterViewInit {
 
-  ngOnInit() {
-  }
+  name="hola"
+  
+  @ViewChild('foo', {static: false}) pRef: ElementRef;
+  @ViewChild(ContentComponent, {static: false}) hello: ContentComponent;
+  @ViewChild(ContentComponent, { read: ElementRef,static: false }) private child: ElementRef;
 
+  ngAfterViewInit() {
+
+  }
+  scroll(el: HTMLElement) {
+     this.child.nativeElement.querySelector('.about').scrollIntoView();
+  }
 
 
 }

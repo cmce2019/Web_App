@@ -1,4 +1,33 @@
-<div class="about container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/firstcomp']">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" (click)="scroll(about)">¿Quién soy?</a>  
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" (click)="scroll(resume)">Mi experiencia y educación</a>  
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" (click)="scroll(services)">Mis servicios</a>  
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" (click)="scroll(contact)">Contacto</a>  
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+<div>
+<div #about class="about container">
     <div class="row">
         <div class="col-md-6 text-center">
             <img src="https://scontent.fbog2-3.fna.fbcdn.net/v/t1.0-9/12572960_10208966902556910_480228076565747621_n.jpg?_nc_cat=111&_nc_ohc=lFVHGGx4E84AX9IAuIT&_nc_ht=scontent.fbog2-3.fna&oh=e3016a12c1440e79272402fd63ab7cdc&oe=5EBB5A63" class="profile-img">           
@@ -6,35 +35,63 @@
         <div class="col-md-6" >
             <h3>¿Quién soy?</h3>
             <p>
-                Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
+                Actualmente soy estudiante de Ingeniería de Sistemas y Telecomunicaciones (9no semestre) con conocimiento en el ambito de desarrollo de software.
+                Con sentido de pertenencia, entusiasta del aprendizaje, con capacidad de trabajo bajo presión y apasionado por las nuevas tecnologías.
+                Algunos de los lenguajes y tecnologías que manejo son los siguientes:
             </p>
             <div class="skills-bar">
-                <p>Javascript</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-                <p>Java</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-                <p>Php</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-                <p>Typescript</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-                <p>MySql</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
+                <ul>
+                    <li> 
+                        <p>Lenguajes de front-end</p> 
+                        <p>Javascript</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;">70%</div>
+                        </div>
+                        <p>HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;">65%</div>
+                        </div>
+                        <p>CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 55%;">55%</div>
+                        </div>
+                    </li>
+                    <li> 
+                        <p>Lenguajes de back-end</p> 
+                        <p>Java</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;">80%</div>
+                        </div>
+                        <p>Php</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;">60%</div>
+                        </div>
+                        <p>Python</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 45%;">45%</div>
+                        </div>
+                    </li>
+                    <li> 
+                        <p>Frameworks</p> 
+                        <p>Angular</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;">75%</div>
+                        </div>
+                        <p>React</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;">50%</div>
+                        </div>
+                        <p>Vue.js</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;">40%</div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-<div class="resume">
+<div #resume class="resume">
     <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -44,43 +101,41 @@ Here in this tutorials you will learn how to make a personal website in HTML, CS
                     <ul class="timeline">
                         <li>
                             <h4>
-                               <span>2018 -</span>  Front End Developer
+                               <span>2017 -</span>  TUTOR PARTICULAR
                             </h4>
                             <p>
-                                Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-                                Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
+                                Desempeño el papel de tutor de apoyo a diversos estudiantes universitarios, con temas relacionados a programación, lógica de programación, POO e interfaz gráfica, entre otros.   
                                 <br>
-                                <b>Company</b> - xyz company <br>
-                                <b>Duration</b> - 1 año <br>
-                                <b>Location</b> - Bogotá-Colombia <br>
+                                <b>Ubicación</b> - Bogotá-Colombia <br>
 
                             </p>
                         </li>
                         <li>
                             <h4>
-                                <span>2018 -</span>  Front End Developer
+                                <span>2018 -</span>  CONTRATISTA INGENIERO DE SISTEMAS ASESOR, INDEPENDIENTE
                              </h4>
                             <p>
-                                Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-                                Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
+                                Análisis, diseño, soporte y desarrollo de sistemas de información
+                                utilizando SQL, mySQL, PHP, JavaScript y CSS.
                                 <br>
-                                <b>Company</b> - xyz company <br>
-                                <b>Duration</b> - 1 año <br>
-                                <b>Location</b> - Bogotá-Colombia <br>
+                                <b>Compañía</b> - Sistemas IO <br>
+                                <b>Duración</b> - 1 año <br>
+                                <b>Ubicación</b> - Bogotá-Colombia <br>
 
                             </p>
                         </li>
                         <li>
                             <h4>
-                                <span>2018 -</span>  Front End Developer
+                                <span>2019 -</span>  DESARROLLADOR FULL STACK JUNIOR 
                             </h4>
                             <p>
-                                Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-                                Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
+                                Desarrollo de aplicación web por medio de código, html, css, javascript y php; Manejo de base de datos y consulta de la misma por medio de MYSQL, uso del jquery para conectar el código front end con el backend.
                                 <br>
-                                <b>Company</b> - xyz company <br>
-                                <b>Duration</b> - 1 año <br>
-                                <b>Location</b> - Bogotá-Colombia <br>
+                                <b>Compañía</b> - GRUPO MERKAS + SERVICIOS S.A.S. 	 <br>
+                                <b>Duración</b> - 5 meses <br>
+                                <b>Ubicación
+
+                                </b> - Bogotá-Colombia <br>
 
                             </p>
                         </li>
@@ -93,43 +148,34 @@ Here in this tutorials you will learn how to make a personal website in HTML, CS
                     <ul class="timeline">
                         <li>
                             <h4>
-                               <span>2018 -</span>  Front End Developer
+                               <span>2015 -</span> BACHILLER ACÁDEMICO
                             </h4>
                             <p>
-                                Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-                                Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
-                                <br>
-                                <b>Company</b> - xyz company <br>
-                                <b>Duration</b> - 1 año <br>
-                                <b>Location</b> - Bogotá-Colombia <br>
+                                <b>Escuela</b> - Liceo San Basilio Magno <br>
+                                <b>Ubicación</b> - Bogotá-Colombia <br>
 
                             </p>
                         </li>
                         <li>
                             <h4>
-                                <span>2018 -</span>  Front End Developer
+                                <span>2016 -</span>  PREGRADO EN INGENIERÍA DE SISTEMAS Y TELECOMUNICACIONES
                              </h4>
                             <p>
-                                Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-                                Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
-                                <br>
-                                <b>Company</b> - xyz company <br>
-                                <b>Duration</b> - 1 año <br>
-                                <b>Location</b> - Bogotá-Colombia <br>
+        
+                                <b>Escuela</b> - Universidad Sergio Arboleda <br>
+                                <b>Duración</b> - 4 años (actualidad) <br>
+                                <b>Ubicación</b> - Bogotá-Colombia <br>
 
                             </p>
                         </li>
                         <li>
                             <h4>
-                                <span>2018 -</span>  Front End Developer
+                                <span>* -</span>  CURSOS Y CERTIFICACIONES
                             </h4>
                             <p>
-                                Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-                                Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
-                                <br>
-                                <b>Company</b> - xyz company <br>
-                                <b>Duration</b> - 1 año <br>
-                                <b>Location</b> - Bogotá-Colombia <br>
+                                -Curso deep Learning Onramp (MATLAB) <br>
+                                -Curso training services (MATLAB)     <br>
+                                -Curso de análisis de los estados financieros de una empresa (Cámara de comercio)
 
                             </p>
                         </li>
@@ -139,23 +185,16 @@ Here in this tutorials you will learn how to make a personal website in HTML, CS
     </div>
     
 </div>
-<div class="services">
+<div #services class="services">
     <div class="container">
         <h1 class="text-center">Servicios</h1>
         <p class="text-center"> 
-            Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-            Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
-            <br>
-            <b>Company</b> - xyz company <br>
-            <b>Duration</b> - 1 año <br>
-            <b>Location</b> - Bogotá-Colombia <br>
-
         </p>  
     <div class="row">
         <div class="col-md-4">
             <div class="services-box">
              
-                <fa name="cog" animation="spin"></fa> <span>Graa</span>
+                <fa name="android"></fa> <span>Desarrollo de aplicaciones</span>
                 <p>
                     Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
                     Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
@@ -170,7 +209,7 @@ Here in this tutorials you will learn how to make a personal website in HTML, CS
         <div class="col-md-4">
             <div class="services-box">
              
-                <fa name="cog" animation="spin"></fa> <span>Graa</span>
+                <fa name="internet-explorer"></fa> <span>Desarrollo web</span>
                 <p>
                     Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
                     Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
@@ -181,11 +220,11 @@ Here in this tutorials you will learn how to make a personal website in HTML, CS
 
                 </p> 
             </div>
-        </div>
-        <div class="col-md-4">
+     </div>
+         <div class="col-md-4">
             <div class="services-box">
              
-                <fa name="cog" animation="spin"></fa> <span>Graa</span>
+                <fa name="database"></fa> <span>Desarrollo de bases de datos</span>
                 <p>
                     Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
                     Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
@@ -196,21 +235,30 @@ Here in this tutorials you will learn how to make a personal website in HTML, CS
 
                 </p> 
             </div>
-        </div>
+        </div> 
     </div>
 </div>
 </div>
- <div class="contact">
+ <div #target class="contact">
     <div class="container text-center">
         <h1>Contacto</h1>
         <p class="text-center"> 
-            Learn How To Make A Website Using HTML And CSS Step By Step Complete Resume Website or Personal website design
-            Here in this tutorials you will learn how to make a personal website in HTML, CSS and Bootstrap, I'll show you how to create responsive personal website (online resume website) step by step. You will learn how to create sticky navigation bar, skills bar, timeline design, services section and sticky social  media buttons using HTML CSS and Bootstrap.
-            <br>
-            <b>Company</b> - xyz company <br>
-            <b>Duration</b> - 1 año <br>
-            <b>Location</b> - Bogotá-Colombia <br>
+            Puedes contactarme mediante alguno de los siguientes medios.
         </p>  
+        <div #contact class="row">
+            <div class="col-md-4">
+                <fa name="github"></fa>
+                <p>cmce2019</p>
+            </div>
+            <div class="col-md-4">
+                <fa name="medium"></fa>
+                <p>Carlos Mauricio Cordoba Endo</p>
+            </div>
+            <div class="col-md-4">
+                <fa name="twitter" ></fa>
+                <p>lvcmce</p>
+            </div>
+        </div>  
         <div class="row">
             <div class="col-md-4">
                 <fa name="phone"></fa>
@@ -224,16 +272,14 @@ Here in this tutorials you will learn how to make a personal website in HTML, CS
                 <fa name="linkedin" ></fa>
                 <p>Carlos Mauricio Cordoba Endo</p>
             </div>
-        </div>  
-        <button type="button" class="btn btn-primary">
+        </div>
+        <a href="https://www.dropbox.com/s/pdmjx8b7m5pm4dq/cv_CarlosCordoba.pdf?dl=1">
+        <button type="button" class="btn btn-primary" >
             <fa name="download"></fa> Curriculum Vitae
-        </button>
-        <button type="button" class="btn btn-primary">
-            <fa name="rocket"></fa> Contacteme
-        </button>
+        </button></a>
     </div>
     <div class="footer text-center">
-        <p>Hecho en Angular por Carlos Mauricio Cordoba Endo </p>
+        <p>Desarrollado en Angular por Carlos Mauricio Cordoba Endo </p>
     </div>
-    
+</div>
 </div> 
